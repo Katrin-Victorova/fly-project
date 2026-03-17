@@ -1,0 +1,11 @@
+HTML
+CSS
+   SCSS - вложенность
+JS
+
+чтобы быстро писать в html - header.header#header>div>nav>ul>li*5>a[href='#']>span
+
+Цмс что это? обертки дополнительные...
+
+tailwind css следующем
+https://github.com/tailwindlabs/tailwindcss/blob/main/packages/tailwindcss/preflight.css
