@@ -9,9 +9,9 @@
 		<link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
 	</head>
 	<body>
-		<header class="header">
-			<a href="/" class="logo">LetsFly</a>
-			<nav class="menu">
+		<header class="header container">
+			<a href="/" class="header__logo">LetsFly</a>
+			<nav class="header__menu">
 				<ul>
 					<li><a href="#">Intro</a></li>
 					<li><a href="#">About</a></li>
@@ -23,10 +23,24 @@
 		</header>
 
 		<main class="welcome">
-			<div class="welcome__cta">
-				<button class="btn">Learn more</button>
-				<button class="btn btn--primary">Let's fly</button>
+			<div class="welcome__information">
+				<div class="welcome__sub-text">Personal jets</div>
+				<h1 class="welcome__title">Luxury.<br />Affordable.</h1>
+				<div class="welcome__discription">
+					We believe loyalty should be rewarded.
+				</div>
+
+				<div class="welcome__cta">
+					<button class="btn">Learn more</button>
+					<button class="btn btn--primary">Let's fly</button>
+				</div>
 			</div>
+
+			<img
+				class="welcome__plane"
+				src="/assets/images/plane/06.png"
+				draggable="false"
+			/>
 		</main>
 	</body>
 </html>

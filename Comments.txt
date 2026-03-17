@@ -25,3 +25,13 @@ variables.$text-gray
 variables.$primary
 
 Чтобы всегда чистил кеш - Network - Disable cache галочка
+
+Дока по БЭМ - https://ru.bem.info/methodology/
+
+двойное подчеркивание __ для элементов
+двойное тире -- для модификаторов
+Только один уровень элементов
+block__element, не block__element__subelement
+Модификаторы — для состояния или варианта
+Например: button--active, card--large, input--error
+Используй только классы: .card__title {} — не h2.card__title {}
