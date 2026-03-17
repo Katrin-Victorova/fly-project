@@ -28,6 +28,7 @@ body {
 		font-weight: 400;
 		font-style: normal;
 		letter-spacing: 0.03em;
+		overflow-x: pointer;
 }
 
 button {
@@ -51,6 +52,8 @@ button {
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
+		position: relative;
+		z-index: 1;
 }
 .header__logo {
 		font-size: 2rem;
@@ -123,11 +126,11 @@ button {
 		font-weight: 500;
 }
 .welcome__title {
-		font-size: 6rem;
+		font-size: 7rem;
 		font-weight: 600;
 		line-height: 1;
 }
-.welcome__discription {
+.welcome__description {
 		margin: 1.4rem 0 1.7rem;
 		font-size: 1.1rem;
 		font-weight: 500;
@@ -147,15 +150,59 @@ button {
 }
 .welcome__plane {
 		position: absolute;
-		bottom: -30rem;
-		max-width: 100%;
+		bottom: -18rem;
+		max-width: 65%;
 		height: auto;
 		margin-top: 0;
-		z-index: 0;
+		z-index: 1;
 		pointer-events: none;
 		-webkit-user-select: none;
 		   -moz-user-select: none;
 		    -ms-user-select: none;
 		        user-select: none;
+}
+.welcome__bg-clouds {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 0;
+}
+.welcome__bg-clouds > img {
+		position: absolute;
+		-webkit-user-select: none;
+		   -moz-user-select: none;
+		    -ms-user-select: none;
+		        user-select: none;
+}
+.welcome__bg-clouds > img:nth-child(1) {
+		top: -15rem;
+		left: 10rem;
+		width: 25vw;
+}
+.welcome__bg-clouds > img:nth-child(2) {
+		top: 4rem;
+		left: 49%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		width: 60vw;
+}
+.welcome__bg-clouds > img:nth-child(3) {
+		top: -3rem;
+		right: -10rem;
+		width: 25vw;
+		-webkit-transform: rotate(10deg);
+		        transform: rotate(10deg);
+}
+.welcome::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: -8rem;
+		z-index: 2;
+		background: radial-gradient(ellipse at 50% 30%, rgba(110, 135, 175, 0.07) 0%, transparent 75%);
+		pointer-events: none;
 }
 /*# sourceMappingURL=main.css.map */
