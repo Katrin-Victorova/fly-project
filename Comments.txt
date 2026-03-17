@@ -9,3 +9,19 @@ JS
 
 tailwind css следующем
 https://github.com/tailwindlabs/tailwindcss/blob/main/packages/tailwindcss/preflight.css
+
+SCSS (Sassy CSS) — это современный препроцессор CSS, расширяющий возможности стандартных стилей переменными, вложенностью, миксинами и функциями
+
+🆕 Новый стандарт Sass
+@import './variables'; // было
+@use './variables'; // нужно
+
+Теперь Sass думает так:
+“Я подключил модуль variables.
+Всё, что внутри него, нужно брать через имя модуля.”
+variables.$font
+variables.$white
+variables.$text-gray
+variables.$primary
+
+Чтобы всегда чистил кеш - Network - Disable cache галочка
