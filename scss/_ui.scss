@@ -1,8 +1,8 @@
 .btn {
 	border-radius: 1.5rem;
-	background-color: $color-block;
+	background-color: variables.$color-block;
 	padding: 0.4rem 0.8rem;
-	font-weight: 600;
+	font-weight: 500;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 	transition: background-color 0.4s ease;
 
@@ -11,11 +11,11 @@
 	}
 
 	&--primary {
-		background-color: #16171c;
-		color: $color-block;
+		background-color: variables.$color-bth;
+		color: variables.$color-block;
 
 		&:hover {
-			background-color: $color-text;
+			background-color: variables.$color-bth-hover;
 		}
 	}
 }

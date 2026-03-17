@@ -14,32 +14,10 @@ body {
 	font-style: normal;
 }
 
-.header {
-	padding: 2rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	.logo {
-		font-size: 2rem;
-		font-weight: 600;
-	}
-
-	.menu {
-		> ul {
-			display: flex;
-			align-items: center;
-			gap: 1rem;
-
-			> li > a {
-				font-weight: 400;
-				color: variables.$color-muted;
-				transition: color 0.3s ease;
-
-				&:hover {
-					color: variables.$color-text;
-				}
-			}
-		}
-	}
+button {
+	cursor: pointer;
 }
+
+@import 'header';
+@import 'ui';
+@import 'welcome';

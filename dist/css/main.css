@@ -12,6 +12,8 @@
 		--color-success: #34c759;
 		--color-error: #ff3b30;
 		--color-warning: #ffcc00;
+		--color-btn: #16171c;
+		--color-btn-hover: #000000;
 }
 
 html {
@@ -25,6 +27,10 @@ body {
 		font-optical-sizing: auto;
 		font-weight: 400;
 		font-style: normal;
+}
+
+button {
+		cursor: pointer;
 }
 
 .header {
@@ -60,5 +66,40 @@ body {
 }
 .header .menu > ul > li > a:hover {
 		color: var(--color-text);
+}
+
+.btn {
+		border-radius: 1.5rem;
+		background-color: var(--color-block);
+		padding: 0.4rem 0.8rem;
+		font-weight: 500;
+		-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+		        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+		-webkit-transition: background-color 0.4s ease;
+		transition: background-color 0.4s ease;
+}
+.btn:hover {
+		background-color: #f1f1f1;
+}
+.btn--primary {
+		background-color: var(--color-btn);
+		color: var(--color-block);
+}
+.btn--primary:hover {
+		background-color: var(--color-btn-hover);
+}
+
+.welcome__cta {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		gap: 0.8rem;
+		margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
