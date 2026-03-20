@@ -1,0 +1,35 @@
+.loyalty {
+	margin-top: 10rem;
+
+	> div {
+		display: flex;
+		flex-direction: column;
+
+		.loyalty__top {
+			margin-left: auto;
+			max-width: max-content;
+		}
+		.loyalty__image {
+			position: absolute;
+			left: -20rem;
+			top: 25rem;
+			max-width: 140%;
+			height: auto;
+		}
+		.loyalty__bottom {
+			margin-top: 30rem;
+
+			&--title {
+				font-weight: 500;
+				font-size: 2.5rem;
+			}
+
+			&--description {
+				margin: 1.2rem 0 1.7rem;
+				font-size: 1.2rem;
+				font-weight: 400;
+				width: 40%;
+			}
+		}
+	}
+}

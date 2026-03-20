@@ -14,7 +14,9 @@ body {
 	font-style: normal;
 	letter-spacing: 0.03em;
 
-	overflow-x: pointer;
+	overflow-x: hidden;
+	max-width: 2560px;
+	margin: 0 auto;
 }
 
 button {
@@ -37,3 +39,4 @@ button {
 @import 'welcome';
 @import 'mission';
 @import 'section_ui';
+@import 'loyalty';

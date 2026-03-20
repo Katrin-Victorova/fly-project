@@ -2,7 +2,7 @@
 :root {
 		--color-bg: #eaebef;
 		--color-block: #fff;
-		--color-text: #383844;
+		--color-text: #3b3b3b;
 		--color-muted: #6e6f77;
 		--color-accent: #ff5c00;
 		--color-accent-hover: #e14c00;
@@ -28,7 +28,9 @@ body {
 		font-weight: 400;
 		font-style: normal;
 		letter-spacing: 0.03em;
-		overflow-x: pointer;
+		overflow-x: hidden;
+		max-width: 2560px;
+		margin: 0 auto;
 }
 
 button {
@@ -115,7 +117,7 @@ button {
 		        box-shadow: none;
 }
 
-.sub-text {
+.sub-title {
 		opacity: 0.7;
 		text-transform: uppercase;
 		font-size: 1.1rem;
@@ -182,11 +184,6 @@ button {
 		height: auto;
 		margin-top: 0;
 		z-index: 1;
-		pointer-events: none;
-		-webkit-user-select: none;
-		   -moz-user-select: none;
-		    -ms-user-select: none;
-		        user-select: none;
 }
 .welcome__bg-clouds {
 		position: absolute;
@@ -267,5 +264,44 @@ section {
 		bottom: 0rem;
 		max-width: 70%;
 		height: auto;
+}
+
+.loyalty {
+		margin-top: 10rem;
+}
+.loyalty > div {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+}
+.loyalty > div .loyalty__top {
+		margin-left: auto;
+		max-width: -webkit-max-content;
+		max-width: -moz-max-content;
+		max-width: max-content;
+}
+.loyalty > div .loyalty__image {
+		position: absolute;
+		left: -20rem;
+		top: 25rem;
+		max-width: 140%;
+		height: auto;
+}
+.loyalty > div .loyalty__bottom {
+		margin-top: 30rem;
+}
+.loyalty > div .loyalty__bottom--title {
+		font-weight: 500;
+		font-size: 2.5rem;
+}
+.loyalty > div .loyalty__bottom--description {
+		margin: 1.2rem 0 1.7rem;
+		font-size: 1.2rem;
+		font-weight: 400;
+		width: 40%;
 }
 /*# sourceMappingURL=main.css.map */
