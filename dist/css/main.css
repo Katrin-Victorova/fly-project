@@ -36,9 +36,17 @@ button {
 }
 
 .container {
-		max-width: 1600px;
+		max-width: 1650px;
 		width: 100%;
 		margin: 0 auto;
+}
+
+.non-select-image {
+		pointer-events: none;
+		-webkit-user-select: none;
+		   -moz-user-select: none;
+		    -ms-user-select: none;
+		        user-select: none;
 }
 
 .header {
@@ -94,9 +102,39 @@ button {
 .btn--primary {
 		background-color: var(--color-btn);
 		color: var(--color-block);
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 }
 .btn--primary:hover {
 		background-color: var(--color-btn-hover);
+}
+.btn--gray {
+		background-color: #dcdde3;
+		color: #32323a;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+}
+
+.sub-text {
+		opacity: 0.7;
+		text-transform: uppercase;
+		font-size: 1.1rem;
+		font-weight: 500;
+}
+
+.description {
+		margin: 1.4rem 0 1.7rem;
+		font-size: 1.2rem;
+		font-weight: 500;
+}
+
+.section-title {
+		font-size: 10rem;
+		font-weight: 800;
+		line-height: 1;
+}
+.section-title > div {
+		font-weight: 300;
 }
 
 .welcome {
@@ -119,21 +157,10 @@ button {
 		position: relative;
 		z-index: 1;
 }
-.welcome__sub-text {
-		opacity: 0.7;
-		text-transform: uppercase;
-		font-size: 1.1rem;
-		font-weight: 500;
-}
 .welcome__title {
 		font-size: 7rem;
 		font-weight: 600;
 		line-height: 1;
-}
-.welcome__description {
-		margin: 1.4rem 0 1.7rem;
-		font-size: 1.1rem;
-		font-weight: 500;
 }
 .welcome__cta {
 		display: -webkit-box;
@@ -222,5 +249,23 @@ button {
 }
 .mission > div:first-child {
 		opacity: 1;
+}
+
+section {
+		position: relative;
+		padding: 12rem 0;
+}
+
+.section__description {
+		width: 54%;
+		padding: 1.7rem 0;
+}
+
+.luxury-flights__image {
+		position: absolute;
+		right: 0rem;
+		bottom: 0rem;
+		max-width: 70%;
+		height: auto;
 }
 /*# sourceMappingURL=main.css.map */

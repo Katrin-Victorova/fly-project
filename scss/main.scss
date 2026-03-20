@@ -22,12 +22,18 @@ button {
 }
 
 .container {
-	max-width: 1600px;
+	max-width: 1650px;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.non-select-image {
+	pointer-events: none;
+	user-select: none;
 }
 
 @import 'header';
 @import 'ui';
 @import 'welcome';
 @import 'mission';
+@import 'section_ui';
